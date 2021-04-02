@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        form {
+            max-width: 400px;
+            display: flex;
+            flex-flow: column;
+        }
+        
+        form > * {
+            margin-bottom: 5px;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form>
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" value="Aqui!">
+          
+        <label for="mail">E-mail:</label>
+        <input type="text" id="mail" name="sobrenome" value="@ex.com">     
+        
+        <label for="idade">Telefone (Opcional): *</label>
+        <input type="text" id="idade" name="idade" value="(99+) (Opcional)">
+
+        <h1>Endereço</h1>
+
+        <div>
+            <label for="logra">Logradouro</label>
+            <input type="text" name="Logradouro" id="logra">
+        </div>
+
+        <div>
+            <label for="nr">Número</label>
+            <input type="number" name="Número" id="nr" value="0">
+        </div>
+
+        <br>
+
+        <label for="bai">Bairro (opcional) *</label>
+        <input type="text" name="Bairro (opcional)" id="bai" value="Opcional">
+
+        <div>
+        <label for="cidade1">Cidade</label>
+        <input type="text" name="cidade" id="cidade1">
+        <br>
+        <label for="est">Estado</label>
+        <input type="text" name="Estado" id="est">
+        <br>
+        <label for="cep">CEP///</label>
+        <input type="text" name="cep" id="cep">
+        </div>
+
+        <br>
+
+        <label for="estciv">Estado Civil</label>
+        <select name="estadocivil" id="estciv">
+            <option value="" selected>---Estado Civil---</option>
+            <option value="1">solteiro(a)</option>
+            <option value="2">casado(a)</option>
+            <option value="3">divorciado(a)</option>
+            <option value="4">viúvo(a)</option>
+            <option value="5">separado(a)</option>
+        </select>
+
+        <p>preferência de contato</p>
+
+        <div>
+            <label for="cttem">por E-mail:</label>
+            <input type="checkbox" name="contatoE-mail" id="cttem">
+        </div>
+
+        <div>
+            <label for="cttcll">Por Telefone:</label>
+            <input type="checkbox" name="Contato Cll" id="cttcll">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="aceite">Li e concordo</label> 
+            <input type="checkbox" name="aceite" id="aceite">
+            <br>
+            <a href="termos.html">Termos De uso..</a>
+        </div>
+
+        <button type="reset">Reiniciar Formulário</button>
+        <button type="submit">Enviar formulario</button>
+
+    </form>
+    <hr>
+    <p><a href="https://github.com/BrunoF-M/">Bruno Freitas</a> Mongaguá - 2021</p>
+</body>
+</html>
